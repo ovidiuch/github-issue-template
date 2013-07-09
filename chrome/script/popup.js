@@ -8,7 +8,7 @@ $(function() {
     repo = path[1];
     href = 'https://github.com/' + path[0] + '/' + path[1];
     $('#repos').append('<li>' +
-      '<a href="' + href + '">' + user + '<strong>' + repo + '</strong></a>' +
+      '<a href="' + href + '">' + user + '/<strong>' + repo + '</strong></a>' +
     '</li>');
   }
 });
