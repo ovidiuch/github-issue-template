@@ -1,4 +1,4 @@
-var TEMPLATE_PATH = '//raw.github.com/skidding/github-issue-template/master/README.md';
+var TEMPLATE_PATH = '//raw.github.com/skidding/github-issue-template/master/template.md';
 var $ISSUE_BODY = $('.composer [name="issue[body]"]');
 
 $(function() {
