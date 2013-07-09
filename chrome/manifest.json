@@ -20,5 +20,6 @@
         "script/new-issue-page.js"
       ]
     }
-  ]
+  ],
+  "options_page": "options.html"
 }
