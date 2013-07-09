@@ -1,7 +1,11 @@
 var TEMPLATE_PATH = '//raw.github.com/skidding/github-issue-template/master/template.md';
+var $ISSUE_TITLE = $('.composer [name="issue[title]"]');
 var $ISSUE_BODY = $('.composer [name="issue[body]"]');
 
 $(function() {
+  // Adjust the placeholder of the title input as well, to comply with the BDD
+  // story format
+  $ISSUE_TITLE.prop('placeholder', "Title (describe the story)");
   // Let the user now immediately that a template is being fetched for the
   // fresh issue they're about to create
   $ISSUE_BODY.prop('placeholder', "Loading issue template...");
