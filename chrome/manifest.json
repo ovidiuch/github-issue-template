@@ -6,6 +6,9 @@
   "icons": {
     "16": "icon16.png"
   },
+  "permissions": [
+    "*://raw.github.com/"
+  ],
   "content_scripts": [
     {
       "matches": ["*://github.com/*/issues/new"],
