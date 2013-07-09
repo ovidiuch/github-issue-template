@@ -14,6 +14,8 @@
       "matches": ["*://github.com/*/issues/new"],
       "js": [
         "script/lib/jquery.min.js",
+        "script/lib/jquery.cursor-position.js",
+        "script/lib/jquery.select-range.js",
         "script/new-issue-page.js"
       ]
     }
