@@ -17,7 +17,7 @@ Then  [outcome]
   And [another outcome]
 ```
 
-## Implementation
+## Solution
 
 #### TODO
 - [logical step in completing this story]
