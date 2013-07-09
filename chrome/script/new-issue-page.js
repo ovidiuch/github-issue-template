@@ -10,6 +10,8 @@ $(function() {
   // are possible)
   $.get(TEMPLATE_PATH, function(contents, status) {
     if (status == 'success') {
+      // This placeholder will be shown only when removing the entire contents
+      // provided by the issue template
       $ISSUE_BODY.prop('placeholder', "Ignoring the issue template, are you?");
       $ISSUE_BODY.val($.trim(contents));
     } else {
