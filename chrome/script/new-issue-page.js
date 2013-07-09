@@ -10,6 +10,7 @@ $(function() {
   // are possible)
   $.get(TEMPLATE_PATH, function(contents, status) {
     if (status == 'success') {
+      $ISSUE_BODY.prop('placeholder', "Ignoring the issue template, are you?");
       $ISSUE_BODY.val($.trim(contents));
     } else {
       // Notify the user that the template couldn't be fetched and the they
