@@ -11,9 +11,19 @@ $(function() {
       '<a href="' + href + '">' + user + '/<strong>' + repo + '</strong></a>' +
     '</li>');
   }
+  // Catch click events on the repo links and communicate with the chrome tabs
+  // in order to load the corresponding repo location
   $('#repos a').click(function(e) {
     e.preventDefault();
     var repoLocation = $(e.currentTarget).attr('href');
-    chrome.tabs.create({url: repoLocation});
+    // Attempt to fetch the instance of the currently-open tab
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+      // Redirect the current tab if one is found, otherwise create a new one
+      if (tabs.length) {
+        chrome.tabs.update(tabs[0].id, {url: repoLocation});
+      } else {
+        chrome.tabs.create({url: repoLocation});
+      }
+    });
   });
 });
