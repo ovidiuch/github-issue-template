@@ -6,9 +6,14 @@ $(function() {
     path = githubRepos[i].split('/');
     user = path[0];
     repo = path[1];
-    href = 'https://github.com/' + path[0] + '/' + path[1];
+    href = 'https://github.com/' + path[0] + '/' + path[1] + '/issues/new';
     $('#repos').append('<li>' +
       '<a href="' + href + '">' + user + '/<strong>' + repo + '</strong></a>' +
     '</li>');
   }
+  $('#repos a').click(function(e) {
+    e.preventDefault();
+    var repoLocation = $(e.currentTarget).attr('href');
+    chrome.tabs.create({url: repoLocation});
+  });
 });
