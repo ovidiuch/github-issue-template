@@ -1,4 +1,4 @@
-## Story
+## Need
 
 ```gherkin
 As a [role]
@@ -6,7 +6,7 @@ I want [feature]
 So that [benefit]
 ```
 
-## Scenarios
+## Deliverables
 
 ```gherkin
 Scenario: [title]
@@ -18,6 +18,9 @@ Then  [outcome]
 ```
 
 ## Solution
+
+#### Prerequisites
+- [required dependency for identifying the problem, scope and then solution for this issue]
 
 #### TODO
 - [logical step in completing this story]
