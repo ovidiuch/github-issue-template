@@ -28,7 +28,7 @@ Then  [outcome]
 #### Files
 - [path to a file involved in this story]
 
-#### Insights
+#### Notes
 - [peculiar aspect relevant this story]
 
 #### #ETA [0-2]p
