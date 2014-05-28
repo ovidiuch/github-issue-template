@@ -8,7 +8,7 @@
     "48": "icon48.png"
   },
   "permissions": [
-    "*://raw.github.com/",
+    "*://rawgit.com/",
     "tabs"
   ],
   "content_scripts": [
