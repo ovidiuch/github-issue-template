@@ -8,6 +8,8 @@ So that [benefit]
 
 ## Deliverables
 
+Depends on #123 #345.
+
 ```gherkin
 Scenario: [title]
 Given [context]
