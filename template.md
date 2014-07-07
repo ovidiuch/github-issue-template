@@ -1,5 +1,3 @@
-Depends on #123 #345.
-
 ## Need
 
 ```gherkin
@@ -9,6 +7,8 @@ So that [benefit]
 ```
 
 ## Deliverables
+
+Depends on #123 #345.
 
 ```gherkin
 Scenario: [title]
