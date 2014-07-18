@@ -1,4 +1,4 @@
-var TEMPLATE_PATH = 'https://rawgit.com/skidding/github-issue-template/master/template.md'
+var TEMPLATE_PATH = 'https://cdn.rawgit.com/skidding/github-issue-template/master/template.md';
 var $ISSUE_TITLE = $('.composer [name="issue[title]"]');
 var $ISSUE_BODY = $('.composer [name="issue[body]"]');
 
